@@ -1,8 +1,8 @@
 
-
+<!-- 
   <div align="center">
     <h3>Add a school</h3>
-    <form method="POST">
+    <form method="POST" action="">
       <input type="text" name="name" placeholder="School Name">
       <br>
       <input type="text" name="address" placeholder="School Address">
@@ -11,4 +11,19 @@
       <br>
       <input type="submit" value="add school">
     </form>
-  </div>  
+  </div>   -->
+<div class="container">
+  <form id="signup" method="POST">
+    <div class="header">
+      <h3 align=center>Add a new school</h3>
+    </div>
+      <div class="sep"></div>
+        <div class="inputs">
+          <label for="name"></label><input type="text" name="name" placeholder="school name" autofocus required />
+          <label for="address"></label><input type="text" name="address" placeholder="address" required />
+          <label for="city"></label><input type="text" name="city" placeholder="city" required />
+          <label for="phone"></label><input type="text" name="phone" placeholder="phone" />
+          <input id="submit" type="submit" value="Add school">
+    </div>
+  </form>
+  <br>

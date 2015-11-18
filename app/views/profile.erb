@@ -1,0 +1,27 @@
+<p>
+Welcome back, <%= current_user.name %>!
+<br>
+
+</p>
+
+<div class="login-form" align="center">
+  <h4>Edit your profile?</h4>
+
+
+  <div class="container">
+    <form id="signup" method="POST">
+
+      <div class="sep"></div>
+        <div class="inputs">
+          
+          <label for="email"></label><input type="email" id="email" value="<%= current_user.email %>" />
+          <label for="name"></label><input type="text" id="name" value="<%= current_user.name %>" />
+          <label for="address"></label><input type="text" id="address" value="<%= current_user.address %>" />
+          <label for="city"></label><input type="text" id="city" value="<%= current_user.city %>" />
+          <label for="phone"></label><input type="text" id="phone" value="<%= current_user.phone %>" />
+          <label for="password"></label><input type="password" id="password" value="<%= current_user.password %>" />
+        <input id="submit" type="submit" value="Update">
+      </div>
+    </form>
+  </div>
+​

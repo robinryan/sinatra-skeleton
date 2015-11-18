@@ -14,6 +14,7 @@ class CreateTables < ActiveRecord::Migration
     create_table :schools do |t|
       t.string :name
       t.string :address
+      t.string :city
       t.string :phone
       t.references :user
       t.timestamps

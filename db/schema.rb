@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 1) do
   create_table "schools", force: :cascade do |t|
     t.string   "name"
     t.string   "address"
+    t.string   "city"
     t.string   "phone"
     t.integer  "user_id"
     t.datetime "created_at"
